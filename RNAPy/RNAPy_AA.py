@@ -40,6 +40,9 @@ class RNAPy_AA:
         self._3letter = aa_3let
 
     def __str__(self):
+        return str(self._3letter)
+
+    def _get_3let(self):
         return self._3letter
 
     def to_1letter(self):
@@ -61,6 +64,9 @@ class RNAPy_AA_List:
     def __len__(self):
         return self._length
 
+    def __str__(self):
+        return str("-".join(self.to_list()))
+
     def __iter__(self):
         self._position = 0
         return self
@@ -73,6 +79,18 @@ class RNAPy_AA_List:
         self._position += 1
 
         return result
+
+    def __getitem__(self, item):
+        if type(item) != type(0):
+            raise TypeError
+
+        else:
+            if item >= self._length:
+                raise IndexError
+
+            else:
+                return self._aa_list[item]
+
 
     ''' [Protected Function] '''
 
@@ -108,17 +126,30 @@ class RNAPy_AA_List:
     def length(self):
         return self._length
 
+    def at(self, index):
+        return self._aa_list[index]
 
+    def count(self, aa_3let):
+        result_count = 0
+        for aa in self._aa_list:
+            if aa._get_3let() == aa_3let:
+                result_count += 1
+        return result_count
 
+    def find(self, aa_3let):
+        result_index = 0
+        for aa in self._aa_list:
+            if aa._get_3let() == aa_3let:
+                return result_index
+            else:
+                result_index += 1
+        return False
 
-if __name__ == "__main__":
-    r = RNAPy_AA_List()
-    r._append("Met")
-    r._append("Met")
-    r._append("Ala")
-    for hey in r:
-        print(hey)
-    r.print()
-    hi = r.to_list()
-    print(hi)
-    print(r)
+    def find_all(self, aa_3let):
+        result_list = []
+        index = 0
+        for aa in self._aa_list:
+            if aa._get_3let() == aa_3let:
+                result_list.append(index)
+            index += 1
+        return result_list
