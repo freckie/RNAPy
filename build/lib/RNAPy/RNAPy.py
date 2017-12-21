@@ -5,9 +5,15 @@ class RNA:
 
     def translate(self, rna_str):
         result = aa.RNAPy_AA_List()
+        result._clear()
 
         rna_str = rna_str.upper()
         start_idx = rna_str.find("AUG")
+
+        # No Start Codon
+        if start_idx == -1:
+            return None
+
         triplets = [rna_str[i:i + 3] for i in range(start_idx, len(rna_str), 3)]
 
         for triplet in triplets:
@@ -22,4 +28,4 @@ class RNA:
 if __name__ == "__main__":
     #import RNAPy
 
-    print(RNA().translate("GGAUGGGGAAAAGAGUAUAGAACA"))
+    print(RNA().translate("GGGGGGGGGGGGGG"))

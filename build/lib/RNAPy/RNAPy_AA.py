@@ -99,6 +99,11 @@ class RNAPy_AA_List:
         self._aa_list.append(RNAPy_AA(aa_3let))
         self._length += 1
 
+    # Clear List
+    def _clear(self):
+        self._aa_list.clear()
+        self._length = 0
+
     ''' [Public Function] '''
 
     def to_list(self, mode="3letter"):

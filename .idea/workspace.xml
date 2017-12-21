@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c2c6a17-ef43-4e6c-974d-0aa980fd6074" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/RNAPy-0.1-py3-none-any.whl" afterPath="$PROJECT_DIR$/dist/RNAPy-0.1-py3-none-any.whl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RNAPy.egg-info/SOURCES.txt" afterPath="$PROJECT_DIR$/RNAPy.egg-info/SOURCES.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RNAPy/RNAPy.py" afterPath="$PROJECT_DIR$/RNAPy/RNAPy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RNAPy/RNAPy_AA.py" afterPath="$PROJECT_DIR$/RNAPy/RNAPy_AA.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/RNAPy/RNAPy.py" afterPath="$PROJECT_DIR$/build/lib/RNAPy/RNAPy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/RNAPy/RNAPy_AA.py" afterPath="$PROJECT_DIR$/build/lib/RNAPy/RNAPy_AA.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +21,8 @@
       <file leaf-file-name="RNAPy.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RNAPy/RNAPy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -29,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/RNAPy/RNAPy_AA.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1078">
-              <caret line="98" column="47" lean-forward="true" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+              <caret line="98" column="47" lean-forward="false" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -257,15 +260,15 @@
     <entry file="file://$PROJECT_DIR$/RNAPy/RNAPy_AA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1078">
-          <caret line="98" column="47" lean-forward="true" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+          <caret line="98" column="47" lean-forward="false" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RNAPy/RNAPy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
           <folding />
         </state>
       </provider>

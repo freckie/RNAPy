@@ -5,7 +5,7 @@ class RNA:
 
     def translate(self, rna_str):
         result = aa.RNAPy_AA_List()
-        result.clear()
+        result._clear()
 
         rna_str = rna_str.upper()
         start_idx = rna_str.find("AUG")
